@@ -26,8 +26,8 @@ export default {
 				"overline-small": ["1.2rem", { lineHeight: "1.8rem", letterSpacing: "0.04em", fontWeight: "700" }],
 				// Link
 				link: ["1.2rem", { lineHeight: "2.4rem", letterSpacing: "0.02em", fontWeight: "400" }],
-				"link-small": ["1.4rem", { lineHeight: "2.4rem", letterSpacing: "0.02em", fontWeight: "600" }],
-				"link-xs": ["1.2rem", { lineHeight: "1.6rem", letterSpacing: "0.02em", fontWeight: "600" }],
+				"link-small": ["1.4rem", { lineHeight: "2.4rem", letterSpacing: "0.02em", fontWeight: "400" }],
+				"link-xs": ["0.8rem", { lineHeight: "1.6rem", letterSpacing: "0.02em", fontWeight: "400" }],
 			},
 			letterSpacing: {
 				tightest: "-0.02em",
