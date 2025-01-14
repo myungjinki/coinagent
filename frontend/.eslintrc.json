@@ -1,87 +1,90 @@
 {
-	"extends": [
-	  "next/core-web-vitals",
-	  "next/typescript",
-	  "plugin:import/recommended",
-	  "plugin:import/typescript"
-	],
+	"extends": ["next/core-web-vitals", "next/typescript", "plugin:import/recommended", "plugin:import/typescript"],
 	"plugins": ["import"],
 	"rules": {
-	  "quotes": ["error", "double", {
-		"avoidEscape": true,
-		"allowTemplateLiterals": false
-	  }],
-	  "indent": ["error", "tab"],
-	  "no-mixed-spaces-and-tabs": "error",
-	  "no-trailing-spaces": "error",
-	  "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
-	  "space-in-parens": ["error", "never"],
-	  "array-bracket-spacing": ["error", "never"],
-	  "object-curly-spacing": ["error", "always"],
-	  "comma-spacing": ["error", { "before": false, "after": true }],
-	  "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
-	  "keyword-spacing": ["error", { "before": true, "after": true }],
-	  "space-before-blocks": ["error", "always"],
-	  "space-before-function-paren": ["error", {
-		"anonymous": "never",
-		"named": "never",
-		"asyncArrow": "always"
-	  }],
-	  "space-infix-ops": "error",
-	  "semi": ["error", "always"],
-	  "semi-spacing": ["error", { "before": false, "after": true }],
-	  "comma-dangle": ["error", {
-		"arrays": "always-multiline",
-		"objects": "always-multiline",
-		"imports": "always-multiline",
-		"exports": "always-multiline",
-		"functions": "never"
-	  }],
-	  "no-var": "error",
-	  "prefer-const": "error",
-	  "no-unused-vars": ["error", {
-		"vars": "all",
-		"args": "none",
-		"ignoreRestSiblings": true
-	  }],
-	  "object-shorthand": "error",
-	  "quote-props": ["error", "as-needed"],
-	  "import/order": [
-		"error",
-		{
-		  "groups": [
-			"builtin",
-			"external",
-			"internal",
-			["parent", "sibling"],
-			"index",
-			"object",
-			"type"
-		  ],
-		  "pathGroups": [
+		"quotes": [
+			"error",
+			"double",
 			{
-			  "pattern": "react",
-			  "group": "external",
-			  "position": "before"
-			},
-			{
-			  "pattern": "@/**",
-			  "group": "internal",
-			  "position": "after"
+				"avoidEscape": true,
+				"allowTemplateLiterals": false
 			}
-		  ],
-		  "pathGroupsExcludedImportTypes": ["react"],
-		  "newlines-between": "always",
-		  "alphabetize": {
-			"order": "asc",
-			"caseInsensitive": true
-		  }
-		}
-	  ],
-	  "@typescript-eslint/no-unused-vars": ["error", {
-		"vars": "all",
-		"args": "none",
-		"ignoreRestSiblings": true
-	  }]
+		],
+		"indent": ["error", "tab"],
+		"no-mixed-spaces-and-tabs": "error",
+		"no-trailing-spaces": "error",
+		"no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+		"space-in-parens": ["error", "never"],
+		"array-bracket-spacing": ["error", "never"],
+		"object-curly-spacing": ["error", "always"],
+		"comma-spacing": ["error", { "before": false, "after": true }],
+		"key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
+		"keyword-spacing": ["error", { "before": true, "after": true }],
+		"space-before-blocks": ["error", "always"],
+		"space-before-function-paren": [
+			"error",
+			{
+				"anonymous": "never",
+				"named": "never",
+				"asyncArrow": "always"
+			}
+		],
+		"space-infix-ops": "error",
+		"semi": ["error", "always"],
+		"semi-spacing": ["error", { "before": false, "after": true }],
+		"comma-dangle": [
+			"error",
+			{
+				"arrays": "always-multiline",
+				"objects": "always-multiline",
+				"imports": "always-multiline",
+				"exports": "always-multiline",
+				"functions": "never"
+			}
+		],
+		"no-var": "error",
+		"prefer-const": "error",
+		"no-unused-vars": [
+			"error",
+			{
+				"vars": "all",
+				"args": "none",
+				"ignoreRestSiblings": true
+			}
+		],
+		"object-shorthand": "error",
+		"quote-props": ["error", "as-needed"],
+		"import/order": [
+			"error",
+			{
+				"groups": ["builtin", "external", "internal", ["parent", "sibling"], "index", "object", "type"],
+				"pathGroups": [
+					{
+						"pattern": "react",
+						"group": "external",
+						"position": "before"
+					},
+					{
+						"pattern": "@/**",
+						"group": "internal",
+						"position": "after"
+					}
+				],
+				"pathGroupsExcludedImportTypes": ["react"],
+				"newlines-between": "always",
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
+			}
+		],
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{
+				"vars": "all",
+				"args": "none",
+				"ignoreRestSiblings": true
+			}
+		]
 	}
-  }
+}
