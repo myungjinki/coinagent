@@ -1,32 +1,26 @@
-import Image from "next/image";
+import { UserIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-import HamburgerButton from "./HamburgerButton";
 import Logo from "./Logo";
 
 const Header = () => {
 	return (
-		<header className="max-w-[120rem] w-full mx-auto h-[8rem] flex justify-between items-center p-4">
-			<div>
+		<header className="max-w-[120rem] w-full mx-auto h-24 flex justify-between items-center border-b border-gray-400">
+			<div className="border-r border-gray-400 h-full flex items-center">
 				<Logo />
 			</div>
-			<div className="flex items-start gap-4">
-				<Link href={"/movies"}>
-					<div className="py-3 px-4 text-link-xs lg:text-link text-gray-50 cursor-pointer">AI Agent</div>
+			<div className="flex justify-start w-full pl-16 gap-16">
+				<Link href={"/chatbot"} className="text-link-xs lg:text-link text-gray-50 cursor-pointer">
+					<div>AI Web3 Chatbot</div>
 				</Link>
-				<div className="py-3 px-4 text-link-xs lg:text-link text-gray-50 cursor-pointer">GPT</div>
-				<div className="flex items-center gap-2">
-					<div>
-						<HamburgerButton />
-					</div>
-					<Link href="/login" className="flex gap-2 py-3 px-4 cursor-pointer">
-						<Image src="/icons/file.svg" alt="Arrow" width={16} height={16} />
-						<span className="text-link-xs lg:text-link text-gray-50">Log in</span>
-					</Link>
-				</div>
+				<Link href={"/about"} className="text-link-xs lg:text-link text-gray-50 cursor-pointer">
+					<div>About</div>
+				</Link>
 			</div>
-			<div>
-				<div className="py-3 px-4 text-link-xs lg:text-link text-gray-50 cursor-pointer">GPT</div>
+			<div className="flex h-full w-24 items-center justify-center">
+				<Link href="/login" className="h-6 w-6 text-link-xs lg:text-link text-gray-50">
+					<UserIcon />
+				</Link>
 			</div>
 		</header>
 	);

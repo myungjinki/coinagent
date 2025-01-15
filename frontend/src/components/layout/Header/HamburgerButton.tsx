@@ -4,7 +4,7 @@ interface HamburgerButtonProps {
 
 const HamburgerButton = ({ onClick }: HamburgerButtonProps) => {
 	return (
-		<button className="hamburger-button" onClick={onClick} aria-label="메뉴 열기">
+		<button className="hamburger-button" onClick={onClick} aria-label="Open menu">
 			<span className="hamburger-line" />
 			<span className="hamburger-line" />
 			<span className="hamburger-line" />
