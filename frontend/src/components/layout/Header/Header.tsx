@@ -25,6 +25,9 @@ const Header = () => {
 					</Link>
 				</div>
 			</div>
+			<div>
+				<div className="py-3 px-4 text-link-xs lg:text-link text-gray-50 cursor-pointer">GPT</div>
+			</div>
 		</header>
 	);
 };

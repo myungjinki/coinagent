@@ -11,7 +11,7 @@ const Logo = () => {
 			aria-label="To the main page"
 		>
 			<div className="relative w-[4rem] h-[4rem]">
-				<Image src="/icons/next.svg" alt="MovieMark Logo" fill priority sizes="40px" className="object-contain" />
+				<Image src="/images/logo.png" alt="MovieMark Logo" fill priority sizes="40px" className="object-contain" />
 			</div>
 		</Link>
 	);
