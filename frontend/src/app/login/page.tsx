@@ -1,9 +1,9 @@
-import BackgroundAnimation from "@/components/common/BackgroundAnimation/BackgroundAnimation";
+import Metamask from "@/components/auth/Metamask/Metamask";
 
 export default function Login() {
 	return (
-		<div>
-			<BackgroundAnimation />
+		<div className="flex justify-center items-center h-full">
+			<Metamask />
 		</div>
 	);
 }
